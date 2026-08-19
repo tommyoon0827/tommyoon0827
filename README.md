@@ -30,5 +30,3 @@ CCTV 관제 환경에서 객체 탐지·행동 분류·VLM 재판독을 운영�
 ### 스택
 
 `Python` `PyTorch` `Ultralytics YOLO` `OpenCV` `Ollama` `Django` `PySide6` `MySQL` `PostgreSQL`
-
-📮 secure0514@gmail.com
