@@ -36,6 +36,7 @@
 
 | 기간 | 소속 | 역할 |
 |---|---|---|
+| 2026.07 ~ present | **시큐어시스템즈** | AI Vision Engineer (인턴) — 운영 CCTV 관제 시스템에 행동 분류·객체 탐지·VLM 재판독 투입, 평가 하네스 구축 |
 | 2025.10 ~ 2026.03 | **DASH Lab** | 학부 연구생 · AI Agent Developer — 소아과 문진 지원 에이전트 개발 주도, 응급 추천 시스템 모델 설계 |
 | 2025.03 ~ 2025.08 | **APC Lab** | 학부 연구생 · Deep Learning Researcher — 화학정보학 기반 딥러닝 모델 연구, LLM 챗봇 개발 |
 | 2025.01 ~ 2025.02 | **Claion** | AI Developer Intern — 최신 AI 트렌드 분석 및 비즈니스 모델 적용 프로세스 연구 |
