@@ -1,9 +1,10 @@
 ## 김윤지 (Yoon)
 
-LLM과 비전 모델을 실제 서비스에서 쓸 수 있게 만드는 AI 엔지니어를 목표로 하고 있습니다.
+AI 엔지니어를 목표로 하고 있습니다.
+모델을 학습하고 평가하는 일부터, 그 모델이 쓸 데이터 파이프라인과 결과를 보여 줄 화면·서버까지 직접 만들어 운영에 올려 봤습니다.
 학부 연구생으로 LangChain 기반 의료 AI 에이전트와 RAG 챗봇을 만들었고,
-인턴으로 일하면서는 운영 중인 CCTV 관제 시스템에 비전 모델과 VLM 판독을 붙이고 학습 데이터 파이프라인을 만들었습니다.
-주로 Python으로 작업하고, 학습 점수보다 실제 데이터에서 얼마나 맞는지를 먼저 재 보는 편입니다.
+인턴으로 일하면서는 운영 중인 CCTV 관제 시스템에 비전 모델과 VLM 판독을 붙이고, 학습 데이터 수집 플랫폼과 관제 시스템의 화면·서버를 만들었습니다.
+모델과 데이터는 Python으로, 서비스는 TypeScript와 Go로 만들고, 학습 점수보다 실제 데이터에서 얼마나 맞는지를 먼저 재 보는 편입니다.
 
 📂 [포트폴리오](https://github.com/tommyoon0827/portfolio) · 📝 [velog](https://velog.io/@rosyoon/posts)
 
@@ -32,7 +33,7 @@ LLM과 비전 모델을 실제 서비스에서 쓸 수 있게 만드는 AI 엔�
 CCTV 쪽 모델(행동 분류, 화분 탐지, VLM 판독)은 기존 흉기 탐지를 건드리지 않는 게 조건이었습니다.
 확장 슬롯과 읽기 전용 경로만 써서 붙였고, 문제가 생겨도 기존 탐지는 계속 돌아가게 격리했습니다.
 
-**그 밖에**
+**서비스 · 플랫폼 개발**
 
 **CCTV 관제 시스템 재작성** (2026.07~08) · [화면·설계 보기 →](https://github.com/tommyoon0827/portfolio/tree/main/cctv-control-system)
 
@@ -68,4 +69,4 @@ CCTV 쪽 모델(행동 분류, 화분 탐지, VLM 판독)은 기존 흉기 탐�
 **LLM** `LangChain` `OpenAI API (GPT-4o-mini)` `RAG · ChromaDB` `Prompt Engineering` `Streamlit`  
 **ML · Vision** `PyTorch` `Ultralytics YOLO` `EfficientNet` `OpenCV`  
 **Language · Data** `Python` `R` `Pydantic` `Data Pipeline · QC`  
-**그 밖에** `TypeScript` `Vue 3` `Go` `PostgreSQL`
+**Web · Backend** `TypeScript` `Vue 3` `Nuxt` `Go` `PostgreSQL` `MariaDB` `OpenSearch`
