@@ -36,7 +36,7 @@ AI 모델 배포 플랫폼에 재학습용 데이터를 모으고, 자동 검사
 
 | 프로젝트 | 역할 | 결과 |
 |---|---|---|
-| [소아과 사전 문진 AI 에이전트](https://github.com/tommyoon0827/portfolio/tree/main/pediatric-previsit-agent) · [코드](https://github.com/tommyoon0827/Pediatric_previsit_ai_agent) | AI 에이전트 메인 개발자 | 의학 용어를 보호자 눈높이로 순화하는 LLM 챗봇, Function Calling으로 진료 파라미터 추출, 의료진용 PDF 리포트 자동 생성 |
+| [소아과 사전 문진 AI 에이전트](https://github.com/tommyoon0827/portfolio/tree/main/pediatric-previsit-agent) · [코드](https://github.com/tommyoon0827/Pediatric_previsit_ai_agent) | AI 에이전트 메인 개발자 | 의학 용어를 보호자 눈높이로 순화하는 LLM 챗봇, 의료진용 PDF 리포트 자동 생성 |
 | 지자체 분리배출 안내 RAG 챗봇 | 데이터 엔지니어 | 춘천시 생성형 AI 아이디어 경진대회 동상 (43개 팀). ChromaDB 인덱싱과 멀티모달(EfficientNet-b0 + LLM) 엔드투엔드 설계 |
 | [쓰레기 분류·재활용 가이드 앱](https://github.com/tommyoon0827/portfolio/tree/main/waste-classification-app) · [코드](https://github.com/tommyoon0827/CapstoneDesign) | 데이터 엔지니어 | 한림대 캡스톤 디자인 경진대회 동상. 대규모 데이터셋 큐레이션과 QC로 초기 모델 대비 분류 성능 개선 |
 
