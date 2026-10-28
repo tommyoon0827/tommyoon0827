@@ -13,27 +13,32 @@
 
 | 프로젝트 | 무엇을 | 결과 |
 |---|---|---|
-| 행동 분류 | 사람의 걷기/서기를 프레임 간 이동량으로 판정 | 균형 정확도 75.5% (기저 50%), 추가 연산 없음 |
-| 화분·야구방망이 탐지 | 공개 데이터가 없는 2클래스 경량 탐지 모델 | 미탐률 44% → 14%, 범용 탐지 성능 손실 없음 |
+| [행동 분류](https://github.com/tommyoon0827/portfolio/tree/main/walk-stand-classification) | 사람의 걷기/서기를 프레임 간 이동량으로 판정 | 균형 정확도 75.5% (기저 50%), 추가 연산 없음 |
+| [화분·야구방망이 탐지](https://github.com/tommyoon0827/portfolio/tree/main/potbat-detection) | 공개 데이터가 없는 2클래스 경량 탐지 모델 | 미탐률 44% → 14%, 범용 탐지 성능 손실 없음 |
 | VLM 2차 판독 | 1차 탐지 결과를 VLM으로 재확인해 오탐 필터링 | 사무실 오탐 218건 전부 제거, 심각도 4단계 자동 부여 |
-| 라벨링 도구 | 영상→프레임→YOLO 데이터셋 자동화 + 검수 모드 | 위 세 모델의 학습·검수 데이터를 전부 생산 |
+| [라벨링 도구](https://github.com/tommyoon0827/portfolio/tree/main/cctv-labeling-tool) | 영상→프레임→YOLO 데이터셋 자동화 + 검수 모드 | 행동 분류·화분 탐지 두 모델의 학습·검수 데이터를 생산 |
 
 기존 흉기 탐지를 건드리지 않는 게 조건이었습니다.
 세 기능 다 확장 슬롯이랑 읽기 전용 경로만 써서 운영 코드는 손대지 않았고,
 문제가 생겨도 기존 탐지는 계속 돌아가게 격리했습니다. 
 
-**CCTV 관제 시스템 재작성** (2026.07~08) · [화면·설계 보기 →](https://github.com/tommyoon0827/portfolio)
+**CCTV 관제 시스템 재작성** (2026.07~08) · [화면·설계 보기 →](https://github.com/tommyoon0827/portfolio/tree/main/cctv-control-system)
 
 위 비전 모델들이 올라가는 기존 PHP 관제 시스템을 대체하기 위해, 화면부터 서버까지 Vue 3 + Go로 새로 만들었습니다.
 화면 41개·API 115개를 혼자 개발했고, 실제 서버에 설치해 사무실 CCTV로 동작을 확인했습니다.
+
+**학습 데이터 수집 기능** (2026.08~09) · [화면·설계 보기 →](https://github.com/tommyoon0827/portfolio/tree/main/training-dataset-collection)
+
+AI 모델 배포 플랫폼에 재학습용 데이터를 모으고, 자동 검사와 검수를 거쳐 학습으로 넘기는 기능을 붙였습니다.
+악성 파일 검사용 YARA 규칙이 실제로는 0.2%만 작동하던 것을 찾아 93.9%로 올렸고, 정상 파일 26,768개에서 오탐은 0건이었습니다.
 
 **AI 에이전트 · RAG** (2025~2026)
 
 | 프로젝트 | 역할 | 결과 |
 |---|---|---|
-| [소아과 예진 보조 AI 에이전트](https://github.com/tommyoon0827/Pediatric_previsit_ai_agent) | AI 에이전트 메인 개발자 | 의학 용어를 보호자 눈높이로 순화하는 LLM 챗봇, Function Calling으로 진료 파라미터 추출, 의료진용 PDF 리포트 자동 생성 |
+| [소아과 사전 문진 AI 에이전트](https://github.com/tommyoon0827/portfolio/tree/main/pediatric-previsit-agent) · [코드](https://github.com/tommyoon0827/Pediatric_previsit_ai_agent) | AI 에이전트 메인 개발자 | 의학 용어를 보호자 눈높이로 순화하는 LLM 챗봇, Function Calling으로 진료 파라미터 추출, 의료진용 PDF 리포트 자동 생성 |
 | 지자체 분리배출 안내 RAG 챗봇 | 데이터 엔지니어 | 춘천시 생성형 AI 아이디어 경진대회 동상 (43개 팀). ChromaDB 인덱싱과 멀티모달(EfficientNet-b0 + LLM) 엔드투엔드 설계 |
-| [쓰레기 분류·재활용 가이드 앱](https://github.com/tommyoon0827/CapstoneDesign) | 데이터 엔지니어 | 한림대 캡스톤 디자인 경진대회 동상. 대규모 데이터셋 큐레이션과 QC로 초기 모델 대비 분류 성능 개선 |
+| [쓰레기 분류·재활용 가이드 앱](https://github.com/tommyoon0827/portfolio/tree/main/waste-classification-app) · [코드](https://github.com/tommyoon0827/CapstoneDesign) | 데이터 엔지니어 | 한림대 캡스톤 디자인 경진대회 동상. 대규모 데이터셋 큐레이션과 QC로 초기 모델 대비 분류 성능 개선 |
 
 ---
 
