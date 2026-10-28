@@ -18,7 +18,7 @@ AI 엔지니어를 목표로 하고 있습니다.
 |---|---|---|
 | [소아과 사전 문진 AI 에이전트](https://github.com/tommyoon0827/portfolio/tree/main/pediatric-previsit-agent) · [코드](https://github.com/tommyoon0827/Pediatric_previsit_ai_agent) | LangChain + GPT-4o-mini 문진 에이전트 메인 개발. 답변마다 LLM이 진료 시 주의가 필요한지 판단, 보호자 눈높이로 답하는 RAG(ChromaDB) 육아 상담 챗봇, 의료진용 요약과 PDF 리포트 | 실제 소아청소년과 문진 자료 기반, 한국어·영어 두 버전 |
 | 지자체 분리배출 안내 RAG 챗봇 | 데이터 담당. 지역별 배출 기준을 ChromaDB에 인덱싱하고, 이미지 분류(EfficientNet-b0)와 LLM을 잇는 멀티모달 구조 설계 | 춘천시 생성형 AI 아이디어 경진대회 동상 (43개 팀) |
-| VLM 2차 판독 | 운영 CCTV의 1차 탐지 결과를 VLM으로 다시 확인해 오탐 필터링 | 사무실 오탐 218건 전부 제거, 심각도 4단계 자동 부여 |
+| [VLM 2차 판독](https://github.com/tommyoon0827/portfolio/tree/main/vlm-weapon-verification) | 운영 CCTV의 흉기 탐지를 사내 VLM(Gemma 4 31B)으로 다시 확인해 심각도 4단계 부여, 장면 설명 자동 작성 | 사무실 오탐 218건 판독. 진짜 칼을 놓치던 원인을 저장 단계에서 찾아 원본 녹화로 프레임 6/6 회수 |
 
 **ML · 비전 · 데이터**
 
